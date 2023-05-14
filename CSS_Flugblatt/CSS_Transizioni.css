@@ -1,0 +1,45 @@
+img {
+	
+	display: block;
+	
+	margin-left: auto;
+	
+	margin-right: auto;
+	
+	width: 60%;
+	
+	
+	
+}
+
+a {
+	
+	text-decoration-line: none;
+	
+	font-family: 'Pinyon Script', cursive;
+	
+	font-size: 30px;
+	
+	color: black;
+}
+
+a:hover {
+	
+	color: #cf0606;
+}
+
+p {
+	
+	text-align: center;
+}
+
+
+@media screen and (max-width: 600px) {
+	
+	img {
+		
+		margin-top: 20%;
+		
+		width: 100%;
+	}
+}
