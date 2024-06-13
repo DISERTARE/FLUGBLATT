@@ -1,0 +1,200 @@
+* {
+	
+	background-color: black;
+
+}
+
+p {
+	color: white;
+	
+	text-align: center;
+	
+	font-family: "Bebas Neue";
+	
+	font-size: 130%
+	
+}
+
+img {
+	
+	display: block;
+	
+	width: 40%;
+	
+	margin-left: auto;
+	
+	margin-right: auto;
+	
+	
+}
+
+ul {
+	
+	color: white;
+	
+	text-align: center;
+	
+	list-style-type: none;
+	
+	display: block;
+	
+	width: auto;
+	
+	margin-left: auto;
+	
+	margin-right: auto;
+	
+}
+
+li {
+	
+	text-align: center;
+	
+	display: inline;
+	
+	margin-right: 50px;
+	
+	font-size: 150%;
+	
+	font-family: "flexureregular";
+	
+  font-weight:normal;
+	
+  font-style:normal;
+}
+
+
+
+a {
+	
+		
+	text-align: center;
+	
+	text-decoration-line: underline;
+	
+	color: white
+}
+
+a:hover {
+	
+	color: red;
+}
+
+a:active {
+	
+	text-decoration: line-through;
+	
+	color: antiquewhite;
+}
+
+#KM {
+	
+	text-decoration: none
+
+}
+
+#KM:hover {
+	
+	color: red;
+}
+
+@font-face {
+	
+    font-family: "arsenica_trialbold";
+    src: url('Arsenica_font/arsenicatrial-bold-webfont.woff2') format('woff2'),
+         url('Arsenica_font/arsenicatrial-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'flexureregular';
+    src: url('Flexure_Font/flexure-webfont.woff2') format('woff2'),
+         url('Flexure_Font/flexure-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+.fade-in-image { animation: fadeIn 5s; }
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-moz-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-webkit-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-o-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-ms-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.fade-in-text {animation: fadeIn 3s;
+
+-webkit-animation: fadeIn 3s;
+  -moz-animation: fadeIn 3s;
+  -o-animation: fadeIn 3s;
+  -ms-animation: fadeIn 3s;}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-moz-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-webkit-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-o-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-ms-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@media screen and (max-width: 600px) {
+	
+	img {
+		
+		width: 100%;
+
+	}
+	
+	li {
+		
+		display: block;
+		
+		margin-bottom: 30px;
+
+		
+	}
+	
+	ul {
+		
+		width: auto;
+	}
+}

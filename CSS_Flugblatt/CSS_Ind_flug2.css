@@ -1,0 +1,202 @@
+#BackVideo {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 47%;
+}
+
+#main_img {
+  animation: fadeIn 8s;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-moz-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-webkit-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-o-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-ms-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.main_txt {
+  animation: fadeIn 5s;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  transition: background-color .5s;
+}
+
+#button_img {
+  animation: fadeIn 3s;
+}
+
+@font-face {
+  font-family: "arsenica_trialbold";
+  src: url('Arsenica_font/arsenicatrial-bold-webfont.woff2') format('woff2'),
+       url('Arsenica_font/arsenicatrial-bold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'mestikaregular';
+  src: url('Mestika_font/mestika-webfont.woff2') format('woff2'),
+       url('Mestika_font/mestika-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'flexureregular';
+  src: url('Flexure_Font/flexure-webfont.woff2') format('woff2'),
+       url('Flexure_Font/flexure-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+#title {
+  text-align: center;
+  font-family: "mestikaregular";
+  font-size: 187%;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: none;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  font-family: "flexureregular";
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 120%;
+  color: black;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: red;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#main {
+  transition: margin-left .5s;
+
+}
+
+#Button {
+  display: block;
+  width: 17%;
+}
+
+#inizia {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  text-decoration-line: none;
+  color: black;
+  font-family: "mestikaregular";
+  font-size: 135%;
+}
+
+#inizia:hover {
+  color: red;
+}
+
+@media screen and (max-width: 800px) {
+  #Button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+  }
+  
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+
+  #title {
+    text-align: center;
+    font-family: "mestikaregular";
+    font-size: 200%;
+    margin-top: 60px;
+  }
+
+  #inizia {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+    text-align: center;
+    text-decoration-line: none;
+    color: black;
+    font-family: "mestikaregular";
+    font-size: 135%;
+  }
+
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 120%;
+    color: white;
+    display: block;
+    transition: 0.3s;
+  }
+}

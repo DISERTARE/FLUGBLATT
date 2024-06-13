@@ -1,0 +1,233 @@
+* {
+    
+    background-color: black;
+}
+
+h1 {
+    text-align: center;
+    
+    display: block;
+	
+	width: 95%;
+    
+    margin-left: auto;
+    
+    margin-right: auto;
+	
+	margin: 10px auto 10px auto;
+	
+	font-family: 'mestikaregular', 'Cormorant Garamond', serif;
+	
+	font-size: 50px;
+    
+    color: white;
+	
+}
+
+#apocalisse {
+    
+    text-align: center;
+    
+    display: block;
+	
+	width: 95%;
+    
+    margin-left: auto;
+    
+    margin-right: auto;
+	
+	margin: 10px auto 10px auto;
+	
+	font-family: 'mestikaregular', 'Cormorant Garamond', serif;
+	
+	font-size: 50px;
+    
+    color: white;
+	
+}
+
+h2 {
+    
+    text-align: center;
+    
+    display: block;
+
+	width: 60%;
+	
+	margin: 10px auto 10px auto;
+    
+	margin-bottom: 20px;
+        
+	font-family: 'mestikaregular', 'Cormorant Garamond', serif;
+    
+    font-style: italic;
+	
+	font-size: 20px;
+    
+    color: white;
+	
+}
+
+@font-face {
+  font-family: 'mestikaregular';
+  src: url('Mestika_font/mestika-webfont.woff2') format('woff2'),
+       url('Mestika_font/mestika-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+p {
+	
+	text-align: justify;
+	
+	width: 50%;
+	
+	margin: 10px auto 10px auto;
+	
+	font-family: 'Cormorant Garamond', serif;
+	
+	font-size: 30px;
+    
+    color: white;
+	
+}
+
+a {
+	
+	text-decoration-line: none;
+	
+	font-family: 'arsenica_trialbold', 'Pinyon Script', cursive;
+    
+    font-style: italic;
+	
+	font-size: 30px;
+	
+	color: white;
+}
+
+a:hover {
+	
+	color: #cf0606;
+}
+
+@font-face {
+	
+    font-family: "arsenica_trialbold";
+    src: url('Arsenica_font/arsenicatrial-bold-webfont.woff2') format('woff2'),
+         url('Arsenica_font/arsenicatrial-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+#voltapagina {
+	
+	text-align: center;
+}
+
+
+#iscrizione{
+	
+	color: white;
+	
+	background-color: black;
+	
+	font-family: 'Pathway Gothic One', sans-serif;
+	
+	
+}
+
+.iscrizione {
+	
+	text-align: center;
+	
+	background-color: black;
+}
+
+@media screen and (max-width: 600px) {
+	
+	p {
+		font-size: 100%;
+	}
+    
+    a {
+	
+	text-decoration-line: none;
+	
+	font-family: 'arsenica_trialbold', 'Pinyon Script', cursive;
+    
+    font-style: italic;
+	
+	font-size: 20px;
+	
+	color: white;
+}
+ 
+   h1 {
+    text-align: center;
+    
+    display: block;
+	
+	width: 60%;
+    
+    margin-left: auto;
+    
+    margin-right: auto;
+	
+	margin: 10px auto 10px auto;
+	
+	font-family: 'mestikaregular', 'Cormorant Garamond', serif;
+	
+	font-size: 50px;
+    
+    color: white;
+	
+}
+
+h2 {
+    
+    text-align: center;
+    
+    display: block;
+
+	width: 60%;
+	
+	margin: 10px auto 10px auto;
+    
+	margin-bottom: 20px;
+        
+	font-family: 'mestikaregular', 'Cormorant Garamond', serif;
+    
+    font-style: italic;
+	
+	font-size: 20px;
+    
+    color: white;
+	
+}
+    
+    #apocalisse {
+    
+    text-align: center;
+    
+    display: block;
+	
+	width: 95%;
+    
+    margin-left: auto;
+    
+    margin-right: auto;
+	
+	margin: 10px auto 10px auto;
+	
+	font-family: 'mestikaregular', 'Cormorant Garamond', serif;
+	
+	font-size: 30px;
+    
+    color: white;
+	
+}
+	
+}

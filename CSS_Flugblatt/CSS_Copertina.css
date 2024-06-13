@@ -51,14 +51,6 @@ a {
 	
 }
 
-#iscrizione {
-
-background-color: black;
-
-color: white;
-	
-}
-
 a:hover {
 	
 	color: #cf0606;
@@ -68,6 +60,7 @@ body {
 	
 	margin: auto auto auto auto;
 }
+
 
 @media screen and (max-width: 600px) {
 	

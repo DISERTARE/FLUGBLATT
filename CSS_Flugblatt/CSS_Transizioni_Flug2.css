@@ -1,0 +1,68 @@
+#BackVideo {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+
+img {
+	
+	display: block;
+	
+	margin-left: auto;
+	
+	margin-right: auto;
+	
+	width: 60%;
+	
+	
+	
+}
+
+a {
+	
+	text-decoration-line: none;
+	
+	font-family: 'arsenica_trialbold', 'Pinyon Script', cursive;
+	
+	font-size: 30px;
+	
+	color: black;
+}
+
+@font-face {
+	
+    font-family: "arsenica_trialbold";
+    src: url('Arsenica_font/arsenicatrial-bold-webfont.woff2') format('woff2'),
+         url('Arsenica_font/arsenicatrial-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+a:hover {
+	
+	color: white;
+}
+
+p {
+	
+	text-align: center;
+}
+
+
+@media screen and (max-width: 600px) {
+	
+	img {
+		
+		margin-top: 20%;
+		
+		width: 100%;
+	}
+}
