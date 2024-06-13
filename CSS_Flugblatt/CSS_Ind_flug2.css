@@ -157,7 +157,7 @@ body {
   color: red;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 750px) {
   #Button {
     display: block;
     margin-left: auto;
