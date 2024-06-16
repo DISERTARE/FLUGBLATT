@@ -10,6 +10,20 @@
   z-index: -1;
 }
 
+#home_transiz {
+    
+    width: 100%;
+}
+
+#maschera_transiz {
+    
+    width: 40%;
+}
+
+#larva_transiz {
+    
+    width: 45%;
+}
 
 img {
 	
@@ -20,7 +34,6 @@ img {
 	margin-right: auto;
 	
 	width: 60%;
-	
 	
 	
 }
@@ -58,6 +71,23 @@ p {
 
 
 @media screen and (max-width: 600px) {
+
+    
+    #home_transiz {
+    
+    margin-top: 60%;
+}
+    
+    #maschera_transiz {
+    
+    width: 100%;
+}
+
+#larva_transiz {
+    
+    width: 100%;
+}
+
 	
 	img {
 		
