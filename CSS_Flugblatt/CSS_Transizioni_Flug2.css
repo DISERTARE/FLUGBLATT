@@ -13,6 +13,7 @@
 #home_transiz {
     
     width: 100%;
+    
 }
 
 #maschera_transiz {
@@ -74,9 +75,9 @@ p {
 
     
     #home_transiz {
-	    
+    
     margin-top: 60%;
-	    
+
 }
     
     #maschera_transiz {
@@ -91,6 +92,8 @@ p {
 
 	
 	img {
+		
+		margin-top: 20%;
 		
 		width: 100%;
 	}
