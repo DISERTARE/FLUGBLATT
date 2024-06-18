@@ -310,6 +310,23 @@ h2 {
     color: white;
 	
 }
+
+#semileft {
+    
+    display: block;
+	
+	text-align: left;
+    
+    margin-left: 0px;
+	
+	width: 100%;
+	
+	font-family: 'Cormorant Garamond', serif;
+	
+	font-size: 30px;
+    
+    color: white;
+}
     
     #right {
 
