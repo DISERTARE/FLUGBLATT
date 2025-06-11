@@ -11,6 +11,8 @@
     <link href="CSS_Flugblatt/CSS_Pagine_flug3.css" media="screen" type="text/css" rel="stylesheet" /> 
     
 <script>
+  let userHasScrolled = false;
+
   function isElementInViewport(el) {
       const rect = el.getBoundingClientRect();
       return (
@@ -19,7 +21,7 @@
   }
 
   function checkParagraphsInView() {
-      const video = document.getElementById('BackVideo2');
+      const video = document.getElementById('BackVideo3');
       const paragraphs = document.querySelectorAll('p');
       let paragraphInView = false;
 
@@ -29,17 +31,27 @@
           }
       });
 
-      // Nascondi il video se almeno un paragrafo è visibile
-     if (paragraphInView) {
-    video.style.opacity = '0';
-    video.style.pointerEvents = 'none';
-} else {
-    video.style.opacity = '1';
-    video.style.pointerEvents = 'auto';
-}
+      // SOLO dopo lo scroll
+      if (userHasScrolled) {
+        if (paragraphInView) {
+            video.style.opacity = '0';
+            video.style.pointerEvents = 'none';
+        } else {
+            video.style.opacity = '1';
+            video.style.pointerEvents = 'auto';
+        }
+      } else {
+        // all’avvio il video resta visibile
+        video.style.opacity = '1';
+        video.style.pointerEvents = 'auto';
+      }
   }
 
-  window.addEventListener('scroll', checkParagraphsInView);
+  window.addEventListener('scroll', function() {
+      userHasScrolled = true;
+      checkParagraphsInView();
+  });
+
   window.addEventListener('resize', checkParagraphsInView);
   window.addEventListener('DOMContentLoaded', checkParagraphsInView);
 </script>
