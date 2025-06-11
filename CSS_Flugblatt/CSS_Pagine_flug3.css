@@ -1,0 +1,395 @@
+body {
+    background-color: black;
+    margin: 0;
+}
+
+img {
+
+    width: 40%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+h1 {
+
+    text-align: center;
+    color: white;
+    font-family: cymbeline_regular;
+    font-size: 700%;
+    margin-top: 30%;
+}
+
+#BackVideo {
+  width: 50%;
+  height: 50%;
+  position: fixed;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 18%;
+  margin-bottom: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+  transition: opacity 2s ease;
+}
+
+#BackVideo2 {
+  width: 80%;
+  height: 80%;
+  position: fixed;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 6.5%;
+  margin-bottom: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -2;
+  transition: opacity 2s ease;
+}
+
+#BackVideo3 {
+  width: 20%;
+  height: 60%;
+  position: fixed;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10%;
+  margin-bottom: auto;
+  border-radius: 80%;
+  overflow: hidden;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -2;
+  transition: opacity 2s ease;
+}
+
+#Cornice3_inverted{
+ 
+  width: 37%;
+    display: block;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+p {
+	
+	text-align: justify;
+	
+	width: 50%;
+	
+	margin: 10px auto 10px auto;
+	
+	font-family: "EB Garamond", serif;
+	
+	font-size: 30px;
+    
+  color: white;
+	
+}
+
+@font-face {
+  font-family: "cymbeline_regular";
+  src: url('Cymbeline_Font/cymbeline_regular-webfont.woff2') format('woff2'),
+       url('Cymbeline_Font/cymbeline_regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "trattatello_font";
+  src: url('Trattatello_Font/trattatello-webfont.woff2') format('woff2'),
+       url('Trattatello_Font/trattatello-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+a {
+	
+	text-decoration-line: none;
+	
+	font-family: 'trattatello_font';
+	
+	font-size: 30px;
+	
+	color: white;
+}
+
+a:hover {
+	
+	color: #cf0606;
+}
+
+@font-face {
+    font-family: 'flexureregular';
+    src: url('Flexure_Font/flexure-webfont.woff2') format('woff2'),
+         url('Flexure_Font/flexure-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+	
+    font-family: "arsenica_trialbold";
+    src: url('Arsenica_font/arsenicatrial-bold-webfont.woff2') format('woff2'),
+         url('Arsenica_font/arsenicatrial-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+#voltapagina {
+	
+	text-align: center;
+}
+
+@media screen and (max-width: 800px) {
+  
+body {
+
+  display: block;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+img {
+
+    width: 96%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30%;
+    
+}
+
+h1 {
+
+    text-align: center;
+    color: white;
+    font-family: cymbeline_regular;
+    font-size: 550%;
+    margin-top: 20%;
+}
+
+p {
+	
+	text-align: justify;
+	
+	width: 80%;
+	
+	font-family: "EB Garamond", serif;
+	
+	font-size: 30px;
+    
+  color: white;
+	
+}
+
+#BackVideo {
+  width: 50%;
+  height: 50%;
+  position: fixed;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 24%;
+  margin-bottom: 20%;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+  transition: opacity 2s ease;
+}
+
+#BackVideo2 {
+  width: 70%;
+  height: 70%;
+  position: fixed;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -8%;
+  margin-bottom: 20%;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -2;
+  transition: opacity 2s ease;
+}
+
+#Cornice3_inverted{
+ 
+  width: 96%;
+    display: block;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+#title_3 {
+
+ text-align: center;
+    color: white;
+    font-family: cymbeline_regular;
+    font-size: 500%;
+
+}
+
+#BackVideo3 {
+  width: 45%;
+  height: 30%;
+  position: fixed;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40%;
+  margin-bottom: 20%;
+  border-radius: 80%;
+  overflow: hidden;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -2;
+  transition: opacity 2s ease;
+}
+
+}
+
+@media screen and (min-width: 801px) and (max-width: 1199px) {
+
+  body {
+
+  display: block;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+img {
+
+    width: 30%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30%;
+    
+}
+
+h1 {
+
+    text-align: center;
+    color: white;
+    font-family: cymbeline_regular;
+    font-size: 550%;
+    margin-top: 20%;
+}
+
+p {
+	
+	text-align: justify;
+	
+	width: 80%;
+	
+	font-family: "EB Garamond", serif;
+	
+	font-size: 30px;
+    
+  color: white;
+	
+}
+
+#BackVideo {
+  width: 50%;
+  height: 50%;
+  position: fixed;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 24%;
+  margin-bottom: 20%;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+  transition: opacity 2s ease;
+}
+
+#BackVideo2 {
+  width: 60%;
+  height: 70%;
+  position: fixed;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
+  margin-bottom: 20%;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -2;
+  transition: opacity 2s ease;
+}
+
+#Cornice3_inverted{
+ 
+  width: 30%;
+    display: block;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+
+#title_3 {
+
+ text-align: center;
+    color: white;
+    font-family: cymbeline_regular;
+    font-size: 500%;
+
+}
+
+#BackVideo3 {
+  width: 45%;
+  height: 30%;
+  position: fixed;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15%;
+  margin-bottom: 20%;
+  border-radius: 80%;
+  overflow: hidden;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -2;
+  transition: opacity 2s ease;
+
+}

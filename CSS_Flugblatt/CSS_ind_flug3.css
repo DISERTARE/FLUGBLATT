@@ -1,0 +1,196 @@
+body {
+    background-color: black;
+    margin: 0;
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;  /* Allinea orizzontalmente */
+    align-items: center;      /* Allinea verticalmente */
+            /* Rende l'altezza del contenitore 100% della finestra */
+}
+
+video {
+    width: 28%;  
+    border-radius: 30%;
+}
+
+
+h1 {
+    color: white;
+    text-align: center;
+    font-family: "cymbeline_regular";
+
+display: block;
+
+width: 35%;
+
+font-size: 300%;
+
+margin-left: auto;
+
+margin-right: auto;
+
+}
+
+@font-face {
+  font-family: "trattatello_font";
+  src: url('Trattatello_Font/trattatello-webfont.woff2') format('woff2'),
+       url('Trattatello_Font/trattatello-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+h1 { animation: fadeIn 20s; }
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-moz-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-webkit-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-o-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-ms-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+a {
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;  
+    align-items: center; 
+    text-decoration: none;
+    font-family: "trattatello_font";
+    font-style: normal;
+    font-size: 120%;
+}
+
+a { animation: fadeIn 20s; }
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-moz-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-webkit-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-o-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-ms-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+a:hover {
+  color: red;
+}
+
+@font-face {
+  font-family: "cymbeline_regular";
+  src: url('Cymbeline_Font/cymbeline_regular-webfont.woff2') format('woff2'),
+       url('Cymbeline_Font/cymbeline_regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+img {
+  width: 2.5%;
+  align-items: center; 
+  margin-top: 2%;
+}
+
+@media screen and (max-width: 800px) {
+  
+.video-container {
+    display: flex;
+    justify-content: center;  /* Allinea orizzontalmente */
+    align-items: center;      /* Allinea verticalmente */
+            /* Rende l'altezza del contenitore 100% della finestra */
+}
+
+video {
+    width: 90%;  
+    border-radius: 30%;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    font-family: "cymbeline_regular";
+
+display: block;
+
+width: 40%;
+
+font-size: 300%;
+
+margin-left: auto;
+
+margin-right: auto;
+
+}
+
+a {
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;  
+    align-items: center; 
+    text-decoration: none;
+    font-family: "trattatello_font";
+    font-style: normal;
+    font-size: 135%;
+}
+
+img {
+  width: 15%;
+  align-items: center; 
+  margin-top: 5%;
+}
+
+}
+
+@media screen and (min-width: 801px) and (max-width: 1199px) {
+ 
+img {
+  width: 20%;
+  align-items: center; 
+  margin-top: 5%;
+}
+  
+#backvideo2 {
+    margin-top: 30%;
+    width: 90%;  
+    border-radius: 30%;
+}
+
+}
+

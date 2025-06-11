@@ -1,0 +1,219 @@
+
+body {
+    background-color: black;
+    margin: 0;
+}
+
+body { animation: fadeIn 4s; }
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-moz-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-webkit-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-o-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-ms-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    font-family: "cymbeline_regular";
+
+display: block;
+
+width: 50%;
+
+font-size: 300%;
+
+margin-left: auto;
+
+margin-right: auto;
+
+margin-top: 8%;
+
+text-decoration: none;
+
+}
+
+@font-face {
+  font-family: "cymbeline_regular";
+  src: url('Cymbeline_Font/cymbeline_regular-webfont.woff2') format('woff2'),
+       url('Cymbeline_Font/cymbeline_regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+#Head_ENDPAGE {
+
+	color: white;
+    text-align: center;
+    font-family: "cymbeline_regular";
+
+display: block;
+
+width: 50%;
+
+font-size: 300%;
+
+margin-left: auto;
+
+margin-right: auto;
+
+margin-top: 8%;
+
+text-decoration-line: none;
+}
+
+p {
+	color: white;
+    text-align: center;
+    font-family: "trattatello_font";
+
+display: block;
+
+width: 50%;
+
+font-size: 300%;
+
+margin-left: auto;
+
+margin-right: auto;
+
+margin-top: 2%;
+text-decoration: none;
+	
+}
+
+ul {
+	
+	color: white;
+	
+	text-align: center;
+	
+	list-style-type: none;
+	
+	display: block;
+	
+	width: auto;
+	
+	margin-left: auto;
+	
+	margin-right: auto;
+	
+}
+
+li {
+	
+	text-align: center;
+	
+	display: inline;
+	
+	margin-right: 50px;
+	
+	font-size: 150%;
+	
+	font-family: "trattatello_font";
+	
+  font-weight:normal;
+	
+  font-style:normal;
+
+  text-decoration: underline;
+}
+
+li:hover {
+
+	color: red;
+
+	text-align: center;
+	
+	display: inline;
+	
+	margin-right: 50px;
+	
+	font-size: 150%;
+	
+	font-family: "trattatello_font";
+	
+  font-weight:normal;
+	
+  font-style:normal;
+
+  text-decoration: underline;
+}
+
+
+
+a {
+	
+		
+	text-align: center;
+	
+	text-decoration: none;
+	
+	color: white
+}
+
+a:hover {
+	
+	color: red;
+}
+
+a:active {
+	
+	text-decoration: line-through;
+	
+	color: antiquewhite;
+}
+
+#navigation_board {
+    
+    display: block;
+    
+}
+
+@font-face {
+  font-family: "trattatello_font";
+  src: url('Trattatello_Font/trattatello-webfont.woff2') format('woff2'),
+       url('Trattatello_Font/trattatello-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@media screen and (max-width: 800px) {
+
+li {
+		
+		display: block;
+		
+		margin-bottom: 30px;
+
+		
+	}
+	
+	ul {
+		
+		width: auto;
+	}
+
+}
+
