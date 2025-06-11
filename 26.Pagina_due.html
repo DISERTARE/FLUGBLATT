@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flugblatt III</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Lavishly+Yours&family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
+   
+    <link href="CSS_Flugblatt/CSS_Pagine_flug3.css" media="screen" type="text/css" rel="stylesheet" /> 
+    
+<script>
+  function isElementInViewport(el) {
+      const rect = el.getBoundingClientRect();
+      return (
+          rect.top < window.innerHeight && rect.bottom > 0
+      );
+  }
+
+  function checkParagraphsInView() {
+      const video = document.getElementById('BackVideo2');
+      const paragraphs = document.querySelectorAll('p');
+      let paragraphInView = false;
+
+      paragraphs.forEach(function(p) {
+          if (isElementInViewport(p)) {
+              paragraphInView = true;
+          }
+      });
+
+      // Nascondi il video se almeno un paragrafo è visibile
+     if (paragraphInView) {
+    video.style.opacity = '0';
+    video.style.pointerEvents = 'none';
+} else {
+    video.style.opacity = '1';
+    video.style.pointerEvents = 'auto';
+}
+  }
+
+  window.addEventListener('scroll', checkParagraphsInView);
+  window.addEventListener('resize', checkParagraphsInView);
+  window.addEventListener('DOMContentLoaded', checkParagraphsInView);
+</script>
+
+</head>
+
+    <body>
+        <img src="CSS_Flugblatt/Cornice2_Inverted.png" alt="Cornice2_Inverted" \>
+
+        <video autoplay muted playsinline poster="" id="BackVideo2">
+  <source src="CSS_Flugblatt/Asina_Alessi_video 2.mp4" type="video/mp4" />
+</video>
+
+        <h1>L'Asina Alessi</h1>
+
+        <p> Tenero rosa tiepolo con tinte violacee al limitare del giorno, quasi all’imbrunire. Paesaggio brullo di sassi e polvere con rade sterpaglie. Sicilia profonda, ma non fa caldo. 
+La donna ha viso ovale, occhi piccoli e verdi, lentiggini e capelli bruni a ornamento. Indossa una veste bianca, stretta in vita. A me lei sembra fatta di acqua. 
+Mi mostra il coltello, è di quelli da scanno, che tacendo si usano ancora per uccidere le bestie nelle campagne e sulle colline. 
+Mi dice che sarò io a uccidere. Con la donna ci sono altre persone, non ne capisco i volti, sembrano indossare cappelli di paglia come non si usano più, e portare baffi lunghi. I tratti si confondono, le sopracciglia mi pare comincino su un volto e si concludano in un altro. Tutti quegli esseri dalle fattezze umane, o forse solo dei torsi confusi e a malapena finiti, a me sembrano fatti di acqua <p>
+
+<p> Franiamo nella valle e intorno a me ci sono promontori sicuri fatti di rocce ammassate, tenute assieme per incastro, da cui emergono pini marittimi e olivi secolari. Intorno non c’è mare, né se ne sente l’odore. Seguo la carovana di questi corpi d’acqua guidata dalla donna occhi verdi. Si fermano e mi guardano. Lei s’avvicina col coltello e me lo mostra, ma io rimango fermo. Mi parla, ma io non capisco, come accade nei ricordi antichi quando le parole si sfanno per la consunzione del tempo. Ci assale un vento fatto di nulla e la donna continua a parlarmi. <p>
+
+<p> Torno indietro, non rispetto al posto che dicevo, ma torno indietro come andando avanti. Un fatto che a volte accade, ma non lo si sa dire. Mentre procedo vedo delle culle di legno, due culle di legno, non di quelle che oscillano, ma ferme e massicce, fatte di legni venati e antichi. Non ospitano figli nati da donne, ma muli dalle fattezze minute. Esseri piccoli che mi guardano con la pietà di chi vive e muore. La donna mi porta avanti. Un andare avanti che è tornare indietro, un altro fatto che a volte accade, ma che non si sa dire. <p>
+
+<p> Adesso ho il coltello da scanno in mano e lo osservo con curiosità cercando una qualche decorazione, testando la morbidezza della presa, la consunzione del manico e il colore dei materiali. La donna e gli altri esseri d’acqua sono accanto a me. Lei questa volta tira in avanti, aggrappandosi al suo collo, un’asina e mentre si avvicina sorride, come quelle statue delle divinità indiane.
+Mi dice con chiarezza che sarò io a uccidere l’animale e poi mi sussurra il suo nome. Si chiama Alessi, l’asina Alessi. <p>
+
+<p>L’asina mi guarda e io la guardo, ci riconosciamo. Provo pietà per lei e lei lo sa, come è sicura che la ucciderò. Io, che se non fosse stato per la notte e il buio mai mi sarei pensato di riuscire solo a tenere il coltello, sono altrettanto sicuro che porrò fine alla sua vita.
+Ci guardiamo fraterni ancora io e l’asina Alessi, ci sappiamo: lei morirà e io morirò, siamo finiti e ci doniamo questa profonda negatività. <p>
+
+<p> Alzo il coltello, è scuro nel cielo senza stelle e senza luna. Poi si disfa la fantasia e l’asina Alessi si perde insieme agli altri spettri. <p>
+
+
+    <p id="voltapagina"><a id="sinistra" href="25.Pagina_uno.html" >prima - </a> <a id="destra" href="27.Pagina_tre.html">dopo</a></p>
+    </body>

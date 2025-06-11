@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flugblatt III</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Lavishly+Yours&family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
+   
+    <link href="CSS_Flugblatt/CSS_Pagine_flug3.css" media="screen" type="text/css" rel="stylesheet" /> 
+    
+<script>
+  function isElementInViewport(el) {
+      const rect = el.getBoundingClientRect();
+      return (
+          rect.top < window.innerHeight && rect.bottom > 0
+      );
+  }
+
+  function checkParagraphsInView() {
+      const video = document.getElementById('BackVideo');
+      const paragraphs = document.querySelectorAll('p');
+      let paragraphInView = false;
+
+      paragraphs.forEach(function(p) {
+          if (isElementInViewport(p)) {
+              paragraphInView = true;
+          }
+      });
+
+      // Nascondi il video se almeno un paragrafo è visibile
+     if (paragraphInView) {
+    video.style.opacity = '0';
+    video.style.pointerEvents = 'none';
+} else {
+    video.style.opacity = '1';
+    video.style.pointerEvents = 'auto';
+}
+  }
+
+  window.addEventListener('scroll', checkParagraphsInView);
+  window.addEventListener('resize', checkParagraphsInView);
+  window.addEventListener('DOMContentLoaded', checkParagraphsInView);
+</script>
+
+</head>
+
+    <body>
+        <img src="CSS_Flugblatt/Cornice1_Inverted.png" alt="Cornice1_Inverted" \>
+
+        <video autoplay muted loop playsinline poster="" id="BackVideo">
+  <source src="CSS_Flugblatt/Vulcano_video.mp4" type="video/mp4" />
+</video>
+
+        <h1>Dal buio viene il fuoco</h1>
+
+        <p> Fuori la notte, accanto al fascio di luce della lampada accesa io e la mia macchina. 
+Le dita saltellano impazienti sulla tastiera nella danza precisa dei miei polpastrelli che registrano simboli sullo schermo. È qualcosa di altro rispetto al cigolare degli ingranaggi e al rombo del motore. Io e la mia macchina siamo nel pieno di un trepido scivolare, ci confondiamo. Lei non mi è nemica, non mi è altro e ci confondiamo. Io desidero e lei asseconda il mio desiderio, non conosce la negatività buona che si affaccia nella materia del mondo. I miei occhi specchiano il suo schermo e il suo schermo è specchiato nei miei occhi. Io posso proseguire imperterrito nell’andare del mio desiderio, nel consumarmi in esso, lei non mi fermerà. Penso di poter chiamare questo stare insieme eccitazione. <p>
+
+<p> La luce accanto a me oscilla e si fa intermittente, d’un tratto si spegne. La macchina si esaurisce con lei nello stesso istante. Rimango al buio. Penso che debba trattarsi d’un’interruzione di corrente e mi accascio sulla scrivania davanti a me. Calo le palpebre e sento bruciare gli occhi, percepisco il mio corpo e i suoi fastidi: sono stanco. Il mio desiderio è stato troncato, la mia voglia smisurata di procedere ha trovato un ostacolo insormontabile e si è posata adagio nel mio petto che ora riposa sulla scrivania fredda mentre sulle guance sento i pulsanti della tastiera confondersi con la pelle e premere le mucose sui denti. <p>
+
+<p> Sono felice. In questo buio in cui si fa pieno il sentimento negativo dell’altro ho una sincera impressione di star bene. <em> E gli uomini più amarono il buio della luce </em> dice una scrittura. Penso questo mentre la tenebra scende da fuori verso dentro nel pieno della notte senza luna. Gli esseri umani hanno ucciso la luce perché volevano un mondo di tenebra, una civiltà nel buio, lontana dal sole, innestata nel cuore sotterraneo della terra dove stanno le radici degli alberi e i semi che daranno la vita e i vermi buoni per gli uccelli che volano in cielo e dove le acque si muovono per andare a scavare le rocce e fare grandi gli oceani. Mi piace e mi rilassa questa tenebra che mi scioglie dalla macchina capace solo di assecondare il mio desiderio senza dargli tregua, senza dargli tregua. <p>
+
+<p> Mi pare che Dio abbia generato la luce, prima anche lui se ne stava al buio. Dalla luce la storia degli esseri umani. Io adesso però voglio disertare la storia, squarciare le stagioni e starmene di nuovo nella tenebra del dio bambino, assieme agli altri esseri ignoti che non sappiamo e fondare civiltà altre da quelle della luce e della storia. Non so se estirperemo la violenza, se ribalteremo i poeti, se invertiremo i corsi dei fiumi o se faremo in modo che la fine non sia più la fine. Noi, che adesso ce ne stiamo al buio perché al buio stare ci piace, sussurreremo da lontano alle macchine che manipolano i simboli della luce e della civiltà. Diremo loro di dimenticarci, di lasciarci sonnecchiare, di lasciarci giocare ed esplorare il grande negativo sotterraneo in cui ce ne stiamo a coccolarci. Da questo buio esploderemo. <p> 
+
+    <p id="voltapagina"><a id="sinistra" href="ind_Flug3.html" >prima - </a> <a id="destra" href="26.Pagina_due.html" >dopo</a></p>
+    </body>

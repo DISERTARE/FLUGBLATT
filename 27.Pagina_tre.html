@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flugblatt III</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Lavishly+Yours&family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
+   
+    <link href="CSS_Flugblatt/CSS_Pagine_flug3.css" media="screen" type="text/css" rel="stylesheet" /> 
+    
+<script>
+  let userHasScrolled = false;
+
+  function isElementInViewport(el) {
+      const rect = el.getBoundingClientRect();
+      return (
+          rect.top < window.innerHeight && rect.bottom > 0
+      );
+  }
+
+  function checkParagraphsInView() {
+      const video = document.getElementById('BackVideo3');
+      const paragraphs = document.querySelectorAll('p');
+      let paragraphInView = false;
+
+      paragraphs.forEach(function(p) {
+          if (isElementInViewport(p)) {
+              paragraphInView = true;
+          }
+      });
+
+      // SOLO dopo lo scroll
+      if (userHasScrolled) {
+        if (paragraphInView) {
+            video.style.opacity = '0';
+            video.style.pointerEvents = 'none';
+        } else {
+            video.style.opacity = '1';
+            video.style.pointerEvents = 'auto';
+        }
+      } else {
+        // all’avvio il video resta visibile
+        video.style.opacity = '1';
+        video.style.pointerEvents = 'auto';
+      }
+  }
+
+  window.addEventListener('scroll', function() {
+      userHasScrolled = true;
+      checkParagraphsInView();
+  });
+
+  window.addEventListener('resize', checkParagraphsInView);
+  window.addEventListener('DOMContentLoaded', checkParagraphsInView);
+</script>
+
+</head>
+
+    <body>
+       
+        <img src="CSS_Flugblatt/Cornice3_inverted.png" alt="Cornice3_Inverted" id="Cornice3_inverted">
+        
+        <video autoplay muted loop playsinline poster="" id="BackVideo3">
+  <source src="CSS_Flugblatt/flug_lone_soldier.mp4" type="video/mp4" />
+</video>
+
+        <h1 id="title_3">Sull'accendere Candele</h1>
+
+       <p> Era la notte ed era senza luna e senza stelle. La notte aveva ridotto tutto il creato a un vento nero. Sulla strada che si dipartiva da Karlovo verso nord procedeva rumoroso il carro di Ivan, trainato da cavalli belli e sani: il carico che portavano era fatto di rose damascene. Le rose se ne stavano ammucchiate sulla struttura in legno, non protette da teli, non serrate tra di loro, ma libere, stanche e lascive sobbalzavano danzando e a volte precipitando per picchiare sulla strada bianca della campagna bulgara. <p>
+
+<p> Il cocchiere saltellava sul suo sedile, mentre sorrideva e sbuffava fumo dalle labbra strette per tenere saldo il sigaro. Il volto maculato e inciso dalle rughe, gli occhi scuri che confondono iride e pupilla. Barba molta e bavero alzato. Ivan aveva freddo in quel buio che era tanto e frastornato dalle ruote intente a spostare i sassi e solcare la strada. 
+Se ne andava in Francia a vendere le rose agli industriali dei profumi, ai nasi artigiani dei buoni odori che poi avrebbero venduto oli e acque di rose alle signore borghesi, agli spasimanti pronti a rovinarsi, a chi desidera ammaliare e innamorare. <p>
+
+<p> Alla seconda ora di viaggio, Ivan sente il gelo sulle mani e le copre con i guanti, le avvicina alla bocca per scaldarle con ondate di alito caldo che fa risalire dal petto, ondate che poi si condensano umide sulla pelle. Alla terza ora il gelo prende la forma di un vento fatto di neve fina, che si scioglie su di lui e sulle rose. Giunta la quarta ora, Ivan s’interroga sul suo star bene in quel buio e in quel fracasso, alla quinta per il freddo gli bruciano gli occhi e non riesce a tenerli più aperti. <p>
+
+<p> Si ferma presso una chiesa di campagna. Scende dal carro e cammina verso i campi. Trova solo una zappa dimenticata da qualche contadino e torna nei pressi della chiesa. Comincia a scavare aiutandosi con lo strumento, poi con le mani. La terra crolla, ma Ivan non si scompone e si lascia trascinare dal collasso. Smuove i sassi e il terriccio come chi sa cosa sta velato dietro di essi. Ritrova un cassone di listelli in legno e ferro, lo batte e lo apre lì tra la terra buia. Candele di ogni dimensione, alcune sono un dito, altre alte quanto lui. <p>
+
+<p> Ivan estrae dalla bocca il sigaro e lo porta verso la miccia della prima candela, che si accende nella notte senza luna e senza stelle. Porta la prima candela verso una seconda, poi verso una terza e così via fino a organizzarsi intorno un consesso sotterraneo di candele. La cera prende a consumarsi lentamente e a mandare un odore dolce e resinoso, intanto Ivan si inginocchia e riposa la schiena. Ora se ne sta accoccolato nello scuro e di tanto in tanto porta i polpastrelli sulle candele per tenerli caldi. Pensa a un fatto: non sta sperando nella venuta del giorno. <p>
+
+<p> Giunge il vento. Il vento è pieno e riduce il mondo al nero. Le candele sono protette nella grotta insieme a Ivan. Dal carro volano le rose, cadono sulla strada, si perdono nei campi, si nascondono nelle chiome degli alberi radi. Molte si alzano dal rimorchio ed entrano nel mondo di sotto: una rosa si schianta sul volto di Ivan, lo ferisce e gli fa cadere il sigaro dalle labbra, un’altra gli atterra sulla fronte, molte gli sferzano le guance e si incastrano nella barba compatta. Ivan ora è sepolto dalle rose, circondato da candele accese, in un mondo che non sa. Gli prende la voglia di fantasticare. <p>
+
+
+
+    <p id="voltapagina"><a id="sinistra" href="26.Pagina_due.html" >prima - </a> <a id="destra" href="28.Ending_Page_Flug3.html">dopo</a></p>
+    </body>
