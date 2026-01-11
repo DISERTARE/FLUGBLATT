@@ -51,10 +51,143 @@ a:hover {
 	background-color: black;
 }
 
+img {
+  display: block;
+  width: 10%;
+  margin: 10px auto;
+}
+
+#language_buttons {
+	
+	text-align: right;
+	width: 30%;
+	margin-left: auto;
+
+	font-family: 'futura', sans-serif;
+	font-size: 23px;
+	font-weight: bold;
+	margin-right: 10px;
+
+}
+
 @media screen and (max-width: 600px) {
 	
 	p {
 		font-size: 100%;
 	}
+
+	img {
+  display: block;
+  width: 25%;
+  margin: 10px auto;
+}
+
+/* contenitore dei bottoni */
+  #language_buttons{
+    width: 100%;
+    margin: 10px auto;
+    text-align: center;     /* oppure right, se lo vuoi a destra */
+    font-size: 16px;        /* dimensione testo del contenitore */
+  }
+
+  /* i link (i bottoni veri) */
+  #language_buttons a{
+    font-size: 16px;        /* qui governi la dimensione dei bottoni */
+    display: inline-block;
+    margin: 0 6px;
+  }
 	
 }
+
+h1 {
+	
+	width: 40%;
+	
+	font-family: 'futura', sans-serif;
+	
+	font-size: 30px;
+
+	font-weight: bold;
+
+}
+
+h2 {
+	text-align: center;
+	
+	width: 20%;
+	
+	margin: 10px auto 10px auto;
+	
+	font-family: 'futura', sans-serif;
+	
+	font-size: 20px;
+
+	font-weight: bold;
+}
+
+.DATA {
+	
+	text-align: right;
+	width: 40%;
+	margin-left: auto;
+
+	font-family: 'futura', sans-serif;
+	font-size: 23px;
+	font-weight: bold;
+	margin-right: 10px;
+
+}
+
+#mail{
+  text-decoration: underline;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 30px;
+  color: black;
+
+  /* fondamentale per mobile */
+  display: inline-block;
+  max-width: 100%;
+  overflow-wrap: anywhere;   /* va a capo anche senza spazi */
+  word-break: break-word;    /* fallback */
+}
+
+#INVIO {
+
+	text-align: center;
+	margin: 10px auto 10px auto;
+}
+
+.claim-finale {
+  margin: 60px auto;
+}
+
+.claim-finale p {
+  width: 100%;
+  margin: 10px auto;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.claim-small {
+  font-family: 'futura', sans-serif;
+  font-size: 20px;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+
+.claim-big {
+  font-family: 'futura', sans-serif;
+  font-size: 36px;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+#english_version,
+#deutsch_version {
+  scroll-margin-top: 30px; /* regola questo valore */
+}
+
