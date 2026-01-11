@@ -1,161 +1,136 @@
+/* -------------------------
+   Base typography
+-------------------------- */
+
 p {
-	
-	text-align: justify;
-	
-	width: 60%;
-	
-	margin: 10px auto 10px auto;
-	
-	font-family: 'Cormorant Garamond', serif;
-	
-	font-size: 30px;
-	
+  text-align: justify;
+  width: 60%;
+  margin: 10px auto;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 30px;
 }
 
 a {
-	
-	text-decoration-line: none;
-	
-	font-family: 'Pinyon Script', cursive;
-	
-	font-size: 30px;
-	
-	color: black;
+  text-decoration: none;
+  font-family: 'Pinyon Script', cursive;
+  font-size: 30px;
+  color: black;
 }
 
 a:hover {
-	
-	color: #cf0606;
+  color: #cf0606;
 }
 
-#voltapagina {
-	
-	text-align: center;
+/* Smooth anchor scroll */
+html {
+  scroll-behavior: smooth;
 }
 
-#iscrizione{
-	
-	color: white;
-	
-	background-color: black;
-	
-	font-family: 'Pathway Gothic One', sans-serif;
-	
-	
+#english_version,
+#deutsch_version {
+  scroll-margin-top: 30px;
 }
 
-.iscrizione {
-	
-	text-align: center;
-	
-	background-color: black;
+/* -------------------------
+   Header sticker (image link)
+   (centers the sticker on page)
+-------------------------- */
+
+a.button {
+  display: block;
+  width: fit-content;
+  margin: 10px auto;
 }
 
-img {
+a.button img {
   display: block;
   width: 10%;
   margin: 10px auto;
 }
 
+/* -------------------------
+   Language buttons (DESKTOP)
+   - Right aligned
+   - Independent from global <a> style
+-------------------------- */
+
 #language_buttons {
-	
-	text-align: right;
-	width: 30%;
-	margin-left: auto;
-
-	font-family: 'futura', sans-serif;
-	font-size: 23px;
-	font-weight: bold;
-	margin-right: 10px;
-
+  width: 30%;
+  margin: 10px 10px 10px auto; /* right aligned block */
+  text-align: right;
+  font-family: 'futura', sans-serif;
+  font-size: 23px;
+  font-weight: bold;
 }
 
-@media screen and (max-width: 600px) {
-	
-	p {
-		font-size: 100%;
-	}
-
-	img {
-  display: block;
-  width: 25%;
-  margin: 10px auto;
+#language_buttons a {
+  font-family: 'futura', sans-serif;
+  font-size: 23px;
+  font-weight: bold;
+  text-decoration: none; /* keep it clean, add underline if you want */
 }
 
-/* contenitore dei bottoni */
-  #language_buttons{
-    width: 100%;
-    margin: 10px auto;
-    text-align: center;     /* oppure right, se lo vuoi a destra */
-    font-size: 16px;        /* dimensione testo del contenitore */
-  }
-
-  /* i link (i bottoni veri) */
-  #language_buttons a{
-    font-size: 16px;        /* qui governi la dimensione dei bottoni */
-    display: inline-block;
-    margin: 0 6px;
-  }
-	
-}
+/* -------------------------
+   Headings
+-------------------------- */
 
 h1 {
-	
-	width: 40%;
-	
-	font-family: 'futura', sans-serif;
-	
-	font-size: 30px;
-
-	font-weight: bold;
-
+  width: 40%;
+  margin: 10px auto;
+  font-family: 'futura', sans-serif;
+  font-size: 30px;
+  font-weight: bold;
 }
 
 h2 {
-	text-align: center;
-	
-	width: 20%;
-	
-	margin: 10px auto 10px auto;
-	
-	font-family: 'futura', sans-serif;
-	
-	font-size: 20px;
-
-	font-weight: bold;
+  text-align: center;
+  width: 20%;
+  margin: 10px auto;
+  font-family: 'futura', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
 }
 
 .DATA {
-	
-	text-align: right;
-	width: 40%;
-	margin-left: auto;
-
-	font-family: 'futura', sans-serif;
-	font-size: 23px;
-	font-weight: bold;
-	margin-right: 10px;
-
+  text-align: right;
+  width: 40%;
+  margin: 10px 10px 10px auto; /* right aligned block */
+  font-family: 'futura', sans-serif;
+  font-size: 23px;
+  font-weight: bold;
 }
 
-#mail{
+/* -------------------------
+   Email styling
+-------------------------- */
+
+#mail {
   text-decoration: underline;
   font-family: 'Cormorant Garamond', serif;
   font-size: 30px;
   color: black;
 
-  /* fondamentale per mobile */
   display: inline-block;
   max-width: 100%;
-  overflow-wrap: anywhere;   /* va a capo anche senza spazi */
-  word-break: break-word;    /* fallback */
+  overflow-wrap: anywhere;
+  word-break: break-word;
 }
+
+/* -------------------------
+   Call-to-action (Invia / Send / Senden)
+   IMPORTANT: in your HTML you reuse id="INVIO" multiple times.
+   IDs must be unique, but this will still style them consistently.
+-------------------------- */
 
 #INVIO {
-
-	text-align: center;
-	margin: 10px auto 10px auto;
+  width: 100%;
+  margin: 10px auto;
+  text-align: center;
 }
+
+/* -------------------------
+   Claim finale
+-------------------------- */
 
 .claim-finale {
   margin: 60px auto;
@@ -182,12 +157,84 @@ h2 {
   font-weight: bold;
 }
 
-html {
-  scroll-behavior: smooth;
+/* -------------------------
+   Misc
+-------------------------- */
+
+#voltapagina {
+  text-align: center;
 }
 
-#english_version,
-#deutsch_version {
-  scroll-margin-top: 30px; /* regola questo valore */
+#iscrizione {
+  color: white;
+  background-color: black;
+  font-family: 'Pathway Gothic One', sans-serif;
 }
 
+.iscrizione {
+  text-align: center;
+  background-color: black;
+}
+
+/* -------------------------
+   Mobile (<= 600px)
+   - Bigger sticker
+   - Language buttons centered & smaller
+   - Paragraphs readable
+-------------------------- */
+
+@media screen and (max-width: 600px) {
+  p {
+    width: 90%;
+    font-size: 18px; /* more consistent than 100% for your current setup */
+  }
+
+  /* Bigger sticker on mobile */
+  a.button img {
+    width: 25%;
+  }
+
+  /* Language buttons: centered on mobile */
+  #language_buttons {
+    width: 100%;
+    margin: 10px auto;
+    text-align: center;
+    font-size: 16px;
+  }
+
+  #language_buttons a {
+    font-size: 16px;
+    display: inline-block;
+    margin: 0 6px;
+  }
+
+  /* Headings scale */
+  h1 {
+    width: 90%;
+    font-size: 22px;
+  }
+
+  h2 {
+    width: 90%;
+    font-size: 18px;
+  }
+
+  .DATA {
+    width: 90%;
+    margin: 10px auto;
+    text-align: center; /* looks better on mobile; change to right if you prefer */
+    font-size: 18px;
+  }
+
+  #mail {
+    font-size: 22px;
+  }
+
+  .claim-small {
+    font-size: 16px;
+  }
+
+  .claim-big {
+    font-size: 28px;
+  }
+}
